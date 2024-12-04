@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.jpeg" alt="ShopEase Logo">
+            <h1>ShopEase</h1>
+         </div>
+         <!-- <form class="search-bar">
+            <input type="text" placeholder="Search for products...">
+            <button type="submit"> Search</button>
+         </form> -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main class="contact-page">
+        <div class="support-info">
+          <h2>Contact Our Support Team</h2>
+          <p><strong>Email:</strong> accountsupport@ecommerce.com</p>
+          <p><strong>Phone:</strong> +91-9876543210</p>
+          <p><strong>Support Hours:</strong> 9:00 AM - 6:00 PM (Mon-Fri)</p>
+        </div>
+        <form class="support-form">
+          <h2>Submit Your Issue</h2>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    
+          <label for="email">Registered Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your registered email" required>
+    
+          <label for="issue-type">Issue Type:</label>
+          <select id="issue-type" name="issue-type" required>
+            <option value="">-- Select an Issue --</option>
+            <option value="login">Login Problem</option>
+            <option value="password-reset">Password Reset</option>
+            <option value="profile-update">Profile Update</option>
+            <option value="other">Other</option>
+          </select>
+    
+          <label for="details">Describe Your Issue:</label>
+          <textarea id="details" name="details" rows="5" placeholder="Provide more details about the issue..." required></textarea>
+    
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+    <style>
+        header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+  }
+  
+  /* Contact Page Layout */
+  .contact-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .support-info, .support-form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  h2 {
+    color: #264653;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  /* Form Styles */
+  label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #21867a;
+  }
+    </style>
